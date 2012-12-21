@@ -1,7 +1,7 @@
 # laravel-directadmin
 =======================
 
-DirectAdmin API Laravel bundle
+Laravel bundle for DirectAdmin API
 
     php artisan bundle:install directadmin
 
@@ -13,6 +13,15 @@ Add it to application/bundles.php:
             'auto'  => true
         ),
         ...
+    );
+
+Edit default settings (use if you only need to access 1 DA server):
+
+    return array(
+        'host'          => '127.0.0.1',
+        'port'          => 2222,
+        'login'         => '',
+        'password'      => ''
     );
 
 Get an instance:
